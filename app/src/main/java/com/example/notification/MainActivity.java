@@ -46,20 +46,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void DiisplayNotification1w() {
-        Notification notification=new NotificationCompat.Builder(this, Channel.CHANNEL_1)
-                .setSmallIcon(R.drawable.ic_wifi)
-                .setContentTitle("No connection")
-                .setContentText("No connectivity, Please Connect")
-                .setCategory(NotificationCompat.CATEGORY_SYSTEM)
-                .build();
-        notificationManagerCompat.notify(3, notification);
-    }
+
 
     private void DiisplayNotification1() {
         Notification notification=new NotificationCompat.Builder(this, Channel.CHANNEL_1)
                 .setSmallIcon(R.drawable.ic_not2)
-                .setSmallIcon(R.drawable.ic_wifi)
                 .setContentTitle("First MEssage")
                 .setContentText("First message Body")
                 .setCategory(NotificationCompat.CATEGORY_MESSAGE)
@@ -76,16 +67,6 @@ public class MainActivity extends AppCompatActivity {
                 .setCategory(NotificationCompat.CATEGORY_MESSAGE)
                 .build();
         notificationManagerCompat.notify(2, notification);
-    }
-    private void DisplayNotificationw2(){
-        Notification notification=new NotificationCompat.Builder(this, Channel.CHANNEL_1)
-                .setSmallIcon(R.drawable.ic_wifi)
-                .setContentTitle("Connected")
-                .setContentText("you have been connected to a network")
-                .setCategory(NotificationCompat.CATEGORY_SYSTEM)
-                .build();
-        notificationManagerCompat.notify(4, notification);
-
     }
 
 
